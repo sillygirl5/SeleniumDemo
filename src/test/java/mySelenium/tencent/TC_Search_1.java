@@ -1,6 +1,7 @@
-package mySelenium;
+package mySelenium.tencent;
 
 import data.TestData;
+import mySelenium.PropertiesHandle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 
 
-public class MyTestCase01 {
+public class TC_Search_1 {
     private WebDriver driver;
 
     @Test(description = "1.进入首页\n" + "2.输入搜索的文件词\n" + "3.点击“查询”按钮", dataProvider = "searchDataProvider",dataProviderClass = TestData.class)

@@ -2,11 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test name="测试环境">
+
         <classes>
-            <class name="mySelenium.MyTestCase01">
+            <!--<class name="mySelenium.tencent.TC_Search_1">
                 <methods>
                     <include name="testcase1"></include>
                     <include name="testcase2"></include>
+                </methods>
+            </class>-->
+            <class name="mySelenium.TC_Prepare">
+                <methods>
+                    <include name="loginRmp"></include>
+                </methods>
+            </class>
+            <class name="mySelenium.baidu.TC_SearchBaidu_1">
+                <methods>
+                    <include name="baiduSearch"></include>
                 </methods>
             </class>
         </classes>

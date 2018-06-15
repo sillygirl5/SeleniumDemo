@@ -16,4 +16,15 @@ public class TestData {
         }
         return data;
     }
+
+    @DataProvider(name = "baiduSearchDataProvider")
+    private Object[][] baiduSearchDataProvider(Method method){
+        Object[][] data = null;
+        if (method.getName().equals("baiduSearch")){
+            data = new Object[][]{
+                    {"测试"}
+            };
+        }
+        return data;
+    }
 }
